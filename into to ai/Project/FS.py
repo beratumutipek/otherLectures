@@ -59,7 +59,7 @@ for x in range(0,3):
 
     plt.subplot(3,3,1+x*3)
     plt.plot(times[x], ECG1[x], label=f'ECG1-10{x}')
-    plt.title('Original Signal')
+    plt.title(f'Original Signal-10{x}')
     plt.xlabel('Time')
     plt.ylabel('Amp')
     plt.legend()
@@ -73,7 +73,7 @@ for x in range(0,3):
 
     plt.subplot(3,3,3+x*3)
     plt.plot(times[x], reconstructed_signal[x], label=f'Our ECG1-10{x}')
-    plt.title('Reconstructed Signal')
+    plt.title(f'Reconstructed Signal-10{x}')
     plt.xlabel('Time')
     plt.ylabel('Amp')
     plt.legend()
